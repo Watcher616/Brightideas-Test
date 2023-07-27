@@ -1,0 +1,601 @@
+:root {
+  --color-blue: #2082CE;
+  --color-dark-blue: #084C80;
+  --color-light-blue: #D3E7F6;
+  --color-white: #DBDBDB;
+  --color-black: #3D3D3D;
+}
+
+body{
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+}
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center; 
+    background-color: var(--color-white);
+    font-family: inherit;
+    z-index: 99;
+    
+  }
+  .nav-title{
+    margin-left: 20px;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .nav-item {
+    margin: 0;
+    cursor: pointer;
+    color: var(--color-black);
+    font-weight: normal;
+    padding: 0 10px 0 10px;
+    font-size: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .bar{
+    display: none;
+    cursor: pointer;
+  }
+  .nav-item:hover{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+  }
+
+
+  .section-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6em;
+  }
+
+  .welcome-page{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+.desc-paragraph{
+  width: 31.1em;
+  height: 6em;
+  
+}
+
+  h1,h2{
+    color: var(--color-dark-blue);
+    font-family: inherit;
+  }
+  p{
+    font-size: 16px;
+    color: var(--color-black);
+  }
+
+  .h1-bold{
+    font-size: 50px;
+    font-weight: bold;
+    
+  }
+  .h1-light{
+    font-size: 50px;
+    font-weight: normal;
+
+  }
+  .h2-bold{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .h2-light{
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .h2-white{
+    color: white;
+    font-size: 30;
+   
+  }
+
+  
+  .circle-container{
+    margin-top: 40px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(170deg);
+    
+
+  }
+
+  .circle{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 0.3s ease, height 0.3s ease;
+    
+  }
+
+  .circle:hover{
+    width: 150px;
+    height: 150px;
+  }
+
+  #light{
+    align-self: flex-end;
+    background-color: var(--color-light-blue)
+    ;
+  }
+  #blue{
+    align-self: center;
+    background-color: var(--color-blue);
+  }
+  #dark{
+    align-self: flex-start;
+    background-color: var(--color-dark-blue);
+  }
+  .section-2{
+    background-color: var(--color-light-blue);
+    height: max-content;
+    padding: 6em 6em 7em 6em;
+    
+  }
+
+  section {
+    display: none; /* Hide all sections initially */
+  }
+  
+  #design1 {
+    display: block; /* Show Design 1 when it's active */
+  }
+  
+
+
+
+
+  /* Style the buttons that are used to open and close the accordion panel */
+
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  box-shadow: 0px 0px 2px 3px var(--color-dark-blue);
+  -webkit-box-shadow: 0px 0px 2px 3px var(--color-dark-blue);
+  -moz-box-shadow: 0px 0px 2px 3px var(--color-dark-blue);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+.accordion-container{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the accordion header */
+
+.accordion {
+  background-color: white;
+  transition: 0.4s;
+  border: 1px solid var(--color-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.accordion-header {
+  font-size: 30px;
+  width: 100%;
+}
+
+/* Style the accordion button */
+.accordion-button_ {
+  background-color: white;
+  width:100%;
+  padding:15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1e84ce;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+/* Style the accordion content */
+.accordion-content {
+display:none;
+margin: 0 1em 0 1em;
+}
+
+
+
+.section-3--container {
+  display: flex;
+  padding: 6em;
+}
+
+.left {
+  flex: 1;
+}
+
+
+.right {
+  width: 80%;
+  flex: 2;
+}
+
+.form-div{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ width: 65%;
+ margin-left: 8em;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.sample-photo{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+
+
+}
+
+.form-p{
+  margin-left: 2em;
+}
+
+
+#message{
+  font-family: inherit;
+  height: 20em;
+
+}
+#dropdown{
+  max-width: 18em;
+  color: #AFAFAF;
+ 
+}
+  option{
+  color: var(--color-black);
+  opacity: 10;
+} 
+option:hover{
+  background-color: none;
+}
+
+
+input[type=text], input[type=email], select, textarea {
+  text-indent: 10px;
+  
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  font-family: inherit;
+ 
+}
+
+#email:hover, #full-name:hover, #message:hover, #dropdown:hover{
+  box-shadow: 0px 0px 2px 4px rgba(211,231,246,1);
+-webkit-box-shadow: 0px 0px 2px 4px rgba(211,231,246,1);
+-moz-box-shadow: 0px 0px 2px 4px rgba(211,231,246,1);
+border: 1px solid var(--color-light-blue);
+}
+
+.submit-button{
+  margin-top: 1em;
+  background-color: var(--color-blue);
+  border-radius: 10px ;
+  color: white;
+  padding: 12px;
+  width: 10em;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: inherit;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  
+}
+
+.i{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blue);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.submit-button:hover{
+  background-color: var(--color-dark-blue);
+}
+
+.section-4{
+  background-color: var(--color-dark-blue);
+  padding: 4em;
+}
+.section-4--container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Set the grid to two columns */
+  grid-gap: 20px;
+  justify-content: center;
+  max-width: 70em;
+  height: 35em;
+}
+.h1-white{
+  color: white;
+  margin-bottom: 1em;
+}
+
+
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-light-blue);
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--color-blue);
+  padding: 12px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  font-family: inherit;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+  transition: font-weight 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+#design2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.design2-table-div{
+margin-top: 5em;
+display: flex;
+flex-direction: column;
+padding: 6em;
+gap: 4em;
+
+
+}
+.td--div{
+  padding: 1em;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 15rem;
+}
+.td--div--cel5{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.td-title{
+  align-self: flex-start;
+  margin-left: 50px;
+}
+.btn1{
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-blue);
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: inherit;
+  padding: 12px;
+  cursor: pointer;
+  width: 10em;
+}
+.btn1:hover{
+  background-color: #084C80;
+}
+ul{
+align-self: center;
+}
+
+li{
+  font-size: 16px;
+  color: var(--color-black);
+  font-family: inherit;
+}
+.td-button{
+  align-self: flex-end;
+}
+
+.submit-btn{
+  margin-top: 1em;
+  background-color: var(--color-blue);
+  border-radius: 10px ;
+  color: white;
+  padding: 12px 15px 12px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: inherit;
+  display: flex; 
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+}
+.submit-btn:hover{
+  background-color: var(--color-dark-blue);
+}
+
+.cell5-h2{
+  margin: 0;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.cell5-btn{
+  align-self: center;
+}
+
+th {
+  background-color: var(--color-blue); /* Set header background color */
+  color: var(--color-blue); /* Set header text color */
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;  
+  
+}
+
+td{
+  border: 1px solid var(--color-blue); /* Set data cell text color */
+}
+
+.section2--design2{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--color-light-blue);
+  width: 100%;
+  padding: 5em;
+}
+
+.column--sec2{
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.sec2-header{
+  background:none;
+}
+
+.header-1{
+  margin-left: 2em;
+  margin-right: 6em;
+}
+.header-2{
+  margin-left: 2em;
+  margin-right: 4em;
+}
+
+
+.last-section {
+  position: relative;
+  width: 100%;
+  
+}
+.last-section img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2082CE;
+  opacity: 0.65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay p {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.overlay h1{
+  opacity: 100%;
+}
+.h1-white-bold{
+  font-weight: bold;
+  color: white;
+  font-size: 30;
+  z-index: 9999;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
